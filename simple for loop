@@ -1,0 +1,9 @@
+##simple for loop. 
+# logic: "for all elements in the list to this"
+
+brands = ['apple', 'microsoft', 'hp', 'sony', 'lg']
+
+for i in brands:
+    print(brands)
+    
+  
