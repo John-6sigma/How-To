@@ -1,0 +1,17 @@
+##Intermediary level for loop
+#this program utilizes nested for loops to go through the string of charaters and count each time 'lol' is in the string.
+
+s = 'lololomlololnp'
+lol = 0 #this will allow the program to start at 0 when it counts each time 'lol' is in the string
+for i in range(0,len(s)):   #utilizing the range function in the for loop. Were starting at 0 because we want to count every letter in the string. Remember, the range function doesnt count the last charater listed in the range.
+    if s[i] == 'l':  #this says "if there is an 'l' then do the following.
+        for j in range(i+1,min(i+2,len(s))):  #Notice the range has changed. The range function is instructed to go to the next letter in the string. Since the range function is looking at the intital value and then the very next value, the program knows to count the last letter in 'lol' to be the first letter in 'lol'. EX: 'lolol' there is 2 'lol' in this string. 
+            if s[j] == 'o':  #this says "if there us an 'o' then do the following.
+                for k in range(j+1,min(j+2,len(s))):  #once again the range has changed. Since were reference j, which points to the 2nd letter in the string were telling the program to go to the 3rd letter in the string since we wrote j+1. 
+                    if s[k] == 'l': 
+                        lol += 1  # Once the loop runs and all of the conditios are met the program will add 1 to the variable lol. This keeps track of how many times the loop ran successfully.
+print(lol)
+
+#'lol' appears 4 times in the variable s. 
+
+#nested for loops are powerful since it lets you perform a repeative task with multiple conditions.
