@@ -1,0 +1,11 @@
+# For loop usnig a range
+
+for i in range(1,10):   #This range includes 1-9. It does not include the last number.
+    if i==3:
+        break #break tells the program to stop the loop
+    print(i)
+
+#this program will print out the numbers 1 and 2. 
+
+    
+    
